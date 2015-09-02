@@ -27,8 +27,6 @@ public class JsonParser {
 
     }
 
-    private static class JsonObject {
-    }
 }
 
 
