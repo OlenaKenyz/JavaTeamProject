@@ -20,7 +20,7 @@ public class JsonParser {
 
 		List<Song> songs = objectMapper.readValue(input, Songs.class).getSongs();
 		
-		return songs
+		return songs;
 	}
 }
-}
+
