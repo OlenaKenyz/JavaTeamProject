@@ -5,7 +5,7 @@ import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
 @JsonIgnoreProperties(ignoreUnknown = true)
-public class Song {
+public class Song implements Comparable {
 	public Song() {
 	};
 
@@ -43,6 +43,13 @@ public class Song {
 
 	public void setDuration(String duration) {
 		this.duration = duration;
+	}
+	
+	 public int compareTo(Object obj) {
+         Song entry = (Song) obj;
+         int result = song.compareTo(entry.song);
+             return result;
+       
 	}
 
 }
